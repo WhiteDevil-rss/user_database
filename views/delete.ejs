@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h2>Delete user</h2>
+    <form action="/user/<%=user.id%>?_method=DELETE" method="post">
+        <fieldset>
+            <legend>Enter Your Details to Delete an user</legend>
+            <label for="id">ID : </label><b><%- user.id %></b><br><br>
+            <label for="username">username : </label>
+            <input type="text" name="username" id="username" size="30"><br><br>
+            <label for="password">password : </label>
+            <input type="password" name="password" id="password" size="30"><br><br>
+            <button type="submit">Delete User</button>
+            <button type="reset">Clear</button>
+        </fieldset>
+    </form>
+</body>
+</html>

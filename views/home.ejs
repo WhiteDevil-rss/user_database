@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div>
+      <h2>The Total Number of Users is <%= count %></h2>
+      <form action="/user" method="get" class="homebtn">
+        <button>Check list of all users!</button>
+      </form>
+      <form action="/user/add" method="get" class="homebtn">
+        <button>Add a new user!</button>
+      </form>
+    </div>
+  </body>
+</html>
